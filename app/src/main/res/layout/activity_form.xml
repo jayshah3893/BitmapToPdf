@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_generate"
+        android:onClick="makeAndSharePDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_above="@+id/btn_generate"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_pdflayout"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:hint="Name"
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:inputType="number"
+
+            android:hint="Mobile Number"
+            android:id="@+id/edMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:lines="3"
+            android:hint="Address"
+            android:id="@+id/edAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="Blood Group"
+            android:id="@+id/edBloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
